@@ -1,0 +1,355 @@
+/* Import Fancy Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+
+/* General Body Styling */
+body {
+    background-color: #ddd3c7; /* Light, elegant background color */
+    font-family: 'Oswald', sans-serif;
+    color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #d1b68d;
+    padding: 0.5rem 3rem;
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5rem;
+}
+
+/* Logo Styling */
+.navbar_logo {
+    width: 150px;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+/* Navbar Links Styling */
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding-right: 100px;
+    align-items: center;
+}
+
+.navbar li {
+    margin: 0 1.5rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #df8806;
+}
+
+/* Headings */
+h1 {
+    margin-top: 20px;
+    font-size: 2.5rem;
+    color: var(--chocolate);
+    padding: 1.5rem 1rem 1.5rem 0.25rem;
+    font-family: 'ivyora-display', sans-serif;
+    font-weight: 400;
+}
+
+/* Section Background Styling */
+.section {
+    background-color: #f9f7f7;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+.section:nth-child(even) {
+    background-color: #e9e4e4;
+}
+/* Welcome Section Styling */
+.welcome-section {
+    text-align: center;
+    background-color: #b1aea7;  /* Light background color */
+    padding: 20px 20px;
+    margin: 10px 0;
+}
+
+.welcome-section h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    color: #1f1a16; 
+    margin-bottom: 1px;
+}
+
+.welcome-section p {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 50%;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+/* Booking Section */
+.booking {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    border: 3px solid rgb(128, 0, 96);
+    box-sizing: border-box;
+}
+
+/* About Section */
+.about-header {
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Dancing Script', cursive;
+    color: #5a4b41;
+    margin: 40px auto;
+}
+
+.about-description {
+    text-align: left;
+    font-size: 1.1em;
+    max-width: 60%;
+    margin: 20px auto;
+    color: #5a4b41;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    line-height: 1.6;
+}
+
+/* Style each paragraph with more spacing */
+.about-description p {
+    margin: 20px 0;
+}
+
+/* Image Container with Overlay Text */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 70%;
+    max-width: 100%;
+    margin: 50px auto;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Overlay Text Styling */
+.overlay-text {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    font-size: 1.5em;
+    font-family: 'Dancing Script', cursive;
+    border-radius: 8px;
+    text-align: right;
+}
+
+.overlay-text .title {
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+.overlay-text .credit {
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.8em;
+    margin-top: 5px;
+}
+
+/* Scrolling Gallery */
+.album-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 80%;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.scrollable-album {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 0px;
+    width: 100%;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+}
+
+.scrollable-album img {
+    min-width: 700px;
+    height: auto;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.scrollable-album img:hover {
+    transform: scale(1.05);
+}
+
+/* Scroll Buttons */
+.scroll-btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 2em;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.scroll-btn.left {
+    left: 0;
+}
+
+.scroll-btn.right {
+    right: 0;
+}
+
+.scroll-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: auto;
+}
+
+.modal-content {
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+    margin: 5% auto;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.close:hover {
+    color: #bbb;
+}
+
+/* Session Description */
+.session-description {
+    text-align: center;
+    font-size: 1.2em;
+    max-width: 80%;
+    margin: 10px auto;
+    color: #555;
+}
+
+.session-header {
+    text-align: center;
+    max-width: 50%;
+    margin: 30px auto;
+    color: #555;
+}
+
+/* Wrapper for text and image gallery */
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Text section */
+.text-section {
+    width: 40%;
+    padding-right: 10px;
+}
+
+/* Container for the gallery section */
+.gallery-container {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    overflow: hidden;
+    height: 700px;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Gallery column styling */
+.gallery-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Scrolling wrapper to create the looping effect */
+.scroll {
+    display: flex;
+    flex-direction: column;
+    animation: scrollUp 100s linear infinite;
+}
+
+.scroll img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Keyframes for scrolling effect */
+@keyframes scrollUp {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}

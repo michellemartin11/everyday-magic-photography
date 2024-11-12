@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everyday Magic Photography</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <div>
+            
+            <nav class="navbar">
+                <div>
+                    <img class="navbar_logo" src="https://github.com/michellemartin11/photography-website/blob/main/Magic.png?raw=false">
+                </div>
+                <ul>
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('sessions') }}">Sessions</a></li>
+                    <li><a href="{{ url_for('about') }}">About Me</a></li>
+                    <li><a href="{{ url_for('book') }}">Book a Session</a></li>
+                </ul>
+            </nav> 
+        </div>   
+    </header>
+    
+    <section class="welcome-section">
+        <h1>Welcome to Everyday Magic Photography</h1>
+        <p>Capturing the beauty of life's most precious moments with natural, heartfelt photographs. Whether it's a family gathering, a special celebration, or a quiet moment of joy, I aim to create timeless memories that reflect the magic in everyday life.</p>
+    </section>
+
+    <section>
+        <div class="album-container">
+            <button class="scroll-btn left">&#10094;</button>
+                <div class="scrollable-album">
+                <img src="https://github.com/michellemartin11/photography-website/blob/main/C6E5ADC9-7193-4E66-9C16-68DB5F8E569D.jpeg?raw=true" alt="Photo 1" onclick="openModal(this)">
+                <img src="https://github.com/michellemartin11/photography-website/blob/main/7B993E6B-EF9E-472B-B077-76B7ACF4774B.jpeg?raw=true" alt="Photo 2" onclick="openModal(this)">
+                <img src="https://github.com/michellemartin11/photography-website/blob/main/IMG_1018_CR3.jpg?raw=true" alt="Photo 3" onclick="openModal(this)">
+                <img src="https://github.com/michellemartin11/photography-website/blob/main/IMG_1169_CR3.jpg?raw=true" alt="Photo 3" onclick="openModal(this)">
+                <img src="https://github.com/michellemartin11/photography-website/blob/main/IMG_1337_CR3.jpg?raw=true" alt="Photo 3" onclick="openModal(this)">
+                <img src="https://github.com/michellemartin11/photography-website/blob/main/IMG_1142_CR3.jpg?raw=true" alt="Photo 3" onclick="openModal(this)">
+                <img src="https://github.com/michellemartin11/photography-website/blob/main/IMG_1318_CR3.jpg?raw=true" alt="Photo 3" onclick="openModal(this)">
+            </div>
+            <button class="scroll-btn right">&#10095;</button>
+        </div>
+        
+        <!-- Modal -->
+        <div id="myModal" class="modal" onclick="closeModal()">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modalImage">
+        </div>        
+    </section>
+
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+
+</body>
+</html>

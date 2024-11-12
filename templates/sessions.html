@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sessions - Everyday Magic Photography</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <div>
+            <nav class="navbar">
+                <div>
+                    <img class="navbar_logo" src="https://github.com/michellemartin11/photography-website/blob/main/Magic.png?raw=false">
+                </div>
+                <ul>
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('sessions') }}">Sessions</a></li>
+                    <li><a href="{{ url_for('about') }}">About Me</a></li>
+                    <li><a href="{{ url_for('book') }}">Book a Session</a></li>
+                </ul>
+            </nav> 
+        </div>   
+    </header>
+
+    
+
+    <!-- Wrapper for text and gallery -->
+    <div class="content-wrapper">
+        <!-- Text section -->
+        <section class="text-section">
+            <h1 class="session-header">Photography Sessions</h1>
+            <p class="session-description">
+                My goal is to make each session easy, fun, and unforgettable for you! I specialize in capturing the beauty of everyday moments, creating genuine, natural photos that reflect the essence of your family. From candid laughter to quiet, tender moments, I strive to photograph the magic in your life in the most natural settings.
+            </p>
+            <p class="session-description">
+                During the session, I'll be directing the shoot, but not specifically posing you. I believe in letting things unfold naturally, allowing you to interact with one another in a relaxed way. My goal is to create a comfortable environment where you can be yourselves, and I can capture authentic moments that tell your unique story. Whether it’s a joyful burst of laughter or a peaceful moment of connection, I’m here to help you feel at ease and create timeless memories.
+
+            </p>
+        </section>
+
+        <!-- Scrolling Photo Display -->
+        <div class="gallery-container">
+            <div class="gallery-column">
+                <div class="scroll">
+                    <img src="https://github.com/michellemartin11/photography-website/blob/main/IMG_3625.jpg?raw=true" alt="Image 16">
+                    <img src="https://github.com/michellemartin11/photography-website/blob/main/E28FF608-DBE1-4192-B0F7-687DD74C304C.jpeg?raw=true" alt="Image 20">
+                    <img src="https://github.com/michellemartin11/photography-website/blob/main/02D232C4-4C00-4DDA-9AB3-5F0C7D7DE536.jpeg?raw=true" alt="Image 1">
+                    <img src="https://github.com/michellemartin11/photography-website/blob/main/4B3E77C7-A83A-4E99-99A2-CC8554BE31BB.jpeg?raw=true" alt="Image 3">
+                    <img src="https://github.com/michellemartin11/photography-website/blob/main/8A4C755C-2037-4D64-A159-ADD0D815B5A2.jpeg?raw=true" alt="Image 18">
+                    <img src="https://github.com/michellemartin11/photography-website/blob/main/71644D71-8935-428D-A6F6-A4A941814226.jpeg?raw=true" alt="Image 6">
+                    <img src="https://github.com/michellemartin11/photography-website/blob/main/7A012CFE-4B82-4DE2-B4B2-C30080FC6CC0(1).jpeg?raw=true" alt="Image 7">
+                    <img src="https://github.com/michellemartin11/photography-website/blob/main/IMG_1167_CR3.jpg?raw=true" alt="Image 13">
+                    <img src="https://github.com/michellemartin11/photography-website/blob/main/30F6EA29-058F-422A-9D78-1310780A7CBF.jpeg?raw=true" alt="Image 2">
+                    <img src="https://github.com/michellemartin11/photography-website/blob/main/87C73931-8D79-454B-BEF0-CEBE5AF1F178.jpeg?raw=true" alt="Image 8">
+                </div>
+            </div>
+            <div class="gallery-column">
+                <div class="scroll">
+                    <img src="https://github.com/michellemartin11/photography-website/blob/main/IMG_1240_CR3.jpg?raw=true" alt="Image 14">
+                    <img src="https://github.com/michellemartin11/photography-website/blob/main/CB442109-480F-4E3C-A988-AD35C19B98CC.jpeg?raw=true" alt="Image 11">
+                    <img src="https://github.com/michellemartin11/photography-website/blob/main/4D016145-ECCB-4949-A02A-6CF073C24EA1.jpeg?raw=true" alt="Image 17">
+                    <img src="https://github.com/michellemartin11/photography-website/blob/main/C3168269-3935-4E80-9CF3-126297E51FEA.jpeg?raw=true" alt="Image 10">
+                    <img src="https://github.com/michellemartin11/photography-website/blob/main/FC6449DE-8F82-4BDE-AC80-2BEEC9372392.jpeg?raw=true" alt="Image 19">
+                    <img src="https://github.com/michellemartin11/photography-website/blob/main/1DC83E42-67A6-4201-B245-9F71D260766E.jpeg?raw=true" alt="Image 4">
+                    <img src="https://github.com/michellemartin11/photography-website/blob/main/94EDE698-344E-4685-B47B-9092A10099D2.jpeg?raw=true" alt="Image 9">
+                    <img src="https://github.com/michellemartin11/photography-website/blob/main/F39CC18E-064A-42D1-92F6-C272240F7E95.jpeg?raw=true" alt="Image 12">
+                    <img src="https://github.com/michellemartin11/photography-website/blob/main/5ABDCDC3-1149-458A-ABAC-B9CA597BFEEA.jpeg?raw=true" alt="Image 5">
+                    <img src="https://github.com/michellemartin11/photography-website/blob/main/IMG_1327_CR3.jpg?raw=true" alt="Image 15">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
