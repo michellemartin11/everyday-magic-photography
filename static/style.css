@@ -341,14 +341,16 @@ h1 {
 }
 
 /* Container for the gallery section */
+/* Container for the gallery section */
 .gallery-container {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 55%;  /* Take up 55% of the width */
     overflow: hidden;
     height: 700px;
     gap: 20px;
     padding: 20px;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
 
 /* Gallery column styling */
@@ -360,6 +362,7 @@ h1 {
     overflow: hidden;
     position: relative;
 }
+
 
 /* Scrolling wrapper to create the looping effect */
 .scroll {
@@ -383,7 +386,7 @@ h1 {
 }
 @media (max-width: 768px) {
     .scroll {
-        animation: scrollUp 60s linear infinite; /* Faster scrolling on smaller screens */
+        animation: scrollUp 300s linear infinite; /* Faster scrolling on smaller screens */
     }
 }
 @media (max-width: 768px) {
