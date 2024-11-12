@@ -36,3 +36,7 @@ window.onclick = function(event) {
         closeModal();
     }
 }
+function toggleNavbar() {
+    var navbar = document.getElementById('navbar-links');
+    navbar.style.display = navbar.style.display === 'block' ? 'none' : 'block';
+}
