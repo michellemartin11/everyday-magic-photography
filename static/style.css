@@ -344,7 +344,7 @@ h1 {
 .gallery-container {
     display: flex;
     justify-content: space-between;
-    width: 60%;
+    width: 100%;
     overflow: hidden;
     height: 700px;
     gap: 20px;
