@@ -8,6 +8,8 @@ body {
     background-color: #ddd3c7; /* Light, elegant background color */
     font-family: 'Oswald', sans-serif;
     color: #333;
+    margin: 0;
+    padding: 0;
 }
 
 /* Navbar Styling */
@@ -73,6 +75,7 @@ h1 {
 .section:nth-child(even) {
     background-color: #e9e4e4;
 }
+
 /* Welcome Section Styling */
 .welcome-section {
     text-align: center;
@@ -300,6 +303,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    flex-wrap: wrap; /* Ensure content wraps on smaller screens */
 }
 
 /* Text section */
@@ -346,10 +350,46 @@ h1 {
 
 /* Keyframes for scrolling effect */
 @keyframes scrollUp {
-    0% {
-        transform: translateY(0);
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-100%); }
+}
+
+/* Responsive Styling for Smaller Screens */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
     }
-    100% {
-        transform: translateY(-100%);
+
+    .navbar ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .navbar a {
+        padding: 10px;
+    }
+
+    .image-container {
+        width: 90%;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .text-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .gallery-container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .gallery-column {
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
