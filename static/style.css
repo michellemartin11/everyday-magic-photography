@@ -381,7 +381,38 @@ h1 {
     0% { transform: translateY(0); }
     100% { transform: translateY(-100%); }
 }
+@media (max-width: 768px) {
+    .scroll {
+        animation: scrollUp 60s linear infinite; /* Faster scrolling on smaller screens */
+    }
+}
+@media (max-width: 768px) {
+    .scrollable-album {
+        flex-direction: column; /* Stack images vertically on smaller screens */
+    }
+    
+    .scrollable-album img {
+        width: 90%;  /* Adjust image width */
+        margin-bottom: 15px;  /* Adjust spacing */
+    }
 
+    .navbar {
+        padding: 0.5rem 1rem; /* Adjust navbar padding for small screens */
+    }
+
+    .about-description {
+        max-width: 100%; /* Allow text to take up more space */
+        font-size: 1rem;  /* Adjust font size for readability */
+    }
+
+    .content-wrapper {
+        flex-direction: column; /* Stack text and gallery vertically */
+    }
+
+    .gallery-container {
+        flex-direction: column; /* Stack gallery images vertically on smaller screens */
+    }
+}
 /* Responsive Styling for Smaller Screens */
 @media (max-width: 768px) {
     .navbar {
