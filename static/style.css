@@ -52,11 +52,11 @@ body {
         background-color: #d1b68d;
         padding: 0.5rem 3rem;
         font-family: 'Great Vibes', cursive;
-        font-size: 16px;
+        font-size: 15px;
     }
     .navbar ul {
         display: none;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
 
@@ -72,6 +72,30 @@ body {
 
     .navbar ul {
         display: block;
+    }
+    .album-container {
+        display: flex;
+        align-items: center;
+        position: relative;
+        max-width: 80%;
+        margin: auto;
+        margin-top: 5px;
+    }
+    .scrollable-album {
+        display: flex;
+        overflow-x: auto;
+        gap: 10px;
+        padding: 0px;
+        width: 80%;
+        scroll-behavior: smooth;
+        white-space: nowrap;
+    }
+    .scrollable-album img {
+        min-width: 90%;
+        height: auto;
+        margin-right: 10px;
+        transition: transform 0.3s ease;
+        cursor: pointer;
     }
 }
 
