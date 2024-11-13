@@ -52,7 +52,7 @@ body {
         background-color: #d1b68d;
         padding: 0.5rem 3rem;
         font-family: 'Great Vibes', cursive;
-        font-size: 15px;
+        font-size: 25px;
     }
     .navbar ul {
         display: none;
@@ -75,6 +75,7 @@ body {
     }
     .album-container {
         display: flex;
+        flex-direction: row;
         align-items: center;
         position: relative;
         max-width: 80%;
@@ -91,9 +92,8 @@ body {
         white-space: nowrap;
     }
     .scrollable-album img {
-        min-width: 90%;
+        min-width: 70%;
         height: auto;
-        margin-right: 10px;
         transition: transform 0.3s ease;
         cursor: pointer;
     }
