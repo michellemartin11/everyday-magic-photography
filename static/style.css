@@ -16,7 +16,7 @@ body {
 .navbar {
     margin: 0;
     padding: 0;
-    width: auto;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -512,8 +512,8 @@ h1 {
     /* Merge galleries into one horizontal scrolling album */
     .gallery-container {
         flex-direction: row;
-        width: 80vw;
-        height:auto;
+        width: auto;
+        height:330px;
         overflow-x: hidden;
         scroll-behavior: smooth;
     }
