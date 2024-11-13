@@ -37,6 +37,6 @@ window.onclick = function(event) {
     }
 }
 function toggleNavbar() {
-    var navbar = document.getElementById('navbar-links');
-    navbar.style.display = navbar.style.display === 'block' ? 'none' : 'block';
+    const links = document.getElementById("navbar-links");
+    links.classList.toggle("show");
 }
