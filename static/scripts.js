@@ -36,7 +36,9 @@ window.onclick = function(event) {
         closeModal();
     }
 }
+// Toggle navbar menu visibility on mobile
 function toggleNavbar() {
-    const links = document.getElementById("navbar-links");
-    links.classList.toggle("show");
+    const navbarLinks = document.getElementById('navbar-links');
+    navbarLinks.classList.toggle('active');
 }
+
