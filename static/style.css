@@ -446,7 +446,7 @@ h1 {
 .gallery-container {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 60%;
     overflow: hidden;
     gap: 20px;
     padding: 20px;
