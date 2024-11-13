@@ -45,6 +45,15 @@ body {
 
 @media (max-width: 768px) {
     /* Hide navbar links by default on mobile */
+    .navbar {
+    display: flex;
+    align-items: right;
+    justify-content: space-between;
+    background-color: #d1b68d;
+    padding: 0.5rem 3rem;
+    font-family: 'Great Vibes', cursive;
+    font-size: 0.5rem;
+    }
     .navbar ul {
         display: none;
         flex-direction: column;
