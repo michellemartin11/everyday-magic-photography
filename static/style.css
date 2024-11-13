@@ -80,6 +80,7 @@ body {
         top: 60px;
         right: 10px;
         background-color: #fff;
+        justify-content: right;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         flex-direction: column;
         width: 200px;
@@ -274,7 +275,7 @@ h1 {
 
 /* Image styling */
 .image-container img {
-    width: 700px;
+    width: 30vw;
     height: auto;
     display: block; 
     border-radius: 10px;
