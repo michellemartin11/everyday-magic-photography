@@ -20,15 +20,14 @@ body {
     background-color: #d1b68d;
     padding: 0.5rem 3rem;
     font-family: 'Great Vibes', cursive;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 
 /* Navbar Logo */
 .navbar_logo {
-    height: auto;  /* Allow the height to adjust automatically */
-    width: auto;   /* Allow the width to adjust automatically */
-    max-height: 40px;  /* Set the maximum height to ensure the logo isn't too large */
-    margin: 5px;   /* Add a 5px margin around the logo */
+    height: 40px;  
+    width: auto;  
+    margin: 0;   
 }
 
 /* Mobile Navbar Toggle Button */
@@ -57,8 +56,7 @@ body {
 .navbar-links a {
     text-decoration: none;
     color: #333;
-    font-size: 1.1em;
-    font-weight: bold;
+    font-size: 1.1rem;
     padding: 5px;
 }
 
@@ -116,14 +114,13 @@ body {
 
     .navbar-links a {
         padding: 10px 15px;
-        font-size: 2rem;
     }
 }
 
 /* Heading Styles */
 h1 {
     margin-top: 10px;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--chocolate);
     padding: 1.5rem 1rem 1.5rem 0.25rem;
     font-family: 'ivyora-display', sans-serif;
@@ -146,7 +143,7 @@ h1 {
 .welcome-section {
     text-align: center;
     background-color: #b1aea7;
-    padding: 20px;
+    padding: 7px;
     margin: 10px 0;
 }
 
@@ -176,7 +173,7 @@ h1 {
 
     .welcome-section h1 {
         font-family: 'Playfair Display', serif;
-        font-size: 2rem;
+        font-size: 3rem;
         color: #1f1a16;
         margin-bottom: 1px;
     }
@@ -207,7 +204,7 @@ h1 {
     font-size: 3rem;
     font-family: 'Dancing Script', cursive;
     color: #5a4b41;
-    margin: 40px auto;
+    margin: 10px auto;
 }
 
 .about-description {
@@ -257,14 +254,15 @@ h1 {
 }
 /* Container for the image */
 .image-container {
-    position: relative;
-    width: 100%;
-    max-width: 100%; /* Ensure it fits the container */
+    position: fixed;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Image styling */
 .image-container img {
-    width: 80vw;
+    width: 70vw;
     height: auto;
     display: block; /* Ensure the image doesn't have any margin or padding */
 }
@@ -273,12 +271,14 @@ h1 {
 .overlay-text {
     position: absolute;
     bottom: 10px;  /* Position at the bottom of the image */
-    left: 10px;    /* Position to the left of the image */
+    right: 10px;    /* Position to the left of the image */
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
     color: white;
     padding: 10px;
     border-radius: 5px;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Dancing Script', cursive;
+    border-radius: 8px;
+    text-align: center;
 }
 
 /* Title and credit text styles */
@@ -288,7 +288,10 @@ h1 {
 }
 
 .overlay-text .credit {
-    font-size: 1em;  /* Smaller font for the credit */
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.8em;
+    margin-top: 5px;
 }
 
 /* Mobile styles */
@@ -382,9 +385,8 @@ h1 {
 
 /* Individual image styling */
 .scrollable-album img {
-    width: 100%;
+    width: 600px;
     height: auto;
-    max-width: 100%; /* Make sure the images don't overflow */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
