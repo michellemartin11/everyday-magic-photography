@@ -42,9 +42,6 @@ body {
 .navbar-toggle {
     display: none;
 }
-<<<<<<< HEAD
-=======
-
 @media (max-width: 768px) {
     /* Hide navbar links by default on mobile */
     .navbar {
@@ -124,9 +121,6 @@ body {
         margin-bottom: 20px;
     }
 }
-
-
->>>>>>> c1426b6e6a2804194be9e0d40d6676bbf8eb2aec
 .navbar li {
     margin: 0 1.5rem;
 }
@@ -448,7 +442,6 @@ h1 {
     0% { transform: translateX(0); }
     100% { transform: translateX(-100%); }
 }
-<<<<<<< HEAD
 /* Responsive Styling */
 @media (max-width: 768px) {
     /* Adjust scrollable album images to fit mobile width */
@@ -490,6 +483,3 @@ h1 {
         display: flex; /* Show when toggled */
     }
 }
-=======
-
->>>>>>> c1426b6e6a2804194be9e0d40d6676bbf8eb2aec
