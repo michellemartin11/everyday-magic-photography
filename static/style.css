@@ -253,17 +253,25 @@ h1 {
 }
 /* Container for the image */
 .image-container {
-    position: fixed;
-    width: 90%;
+    display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    width: 70%;
+    max-width: 100%;
+    margin: 50px auto;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
 
 /* Image styling */
 .image-container img {
-    width: 70vw;
+    width: 60vw;
     height: auto;
-    display: block; /* Ensure the image doesn't have any margin or padding */
+    display: block; 
+    border-radius: 10px;
+    object-fit: cover;
 }
 
 /* Overlay text styling */
@@ -297,7 +305,7 @@ h1 {
 @media (max-width: 768px) {
     .overlay-text {
         bottom: 5px;  /* Adjust the position for mobile */
-        left: 5px;    /* Adjust the position for mobile */
+        right: 5px;    /* Adjust the position for mobile */
         font-size: 0.9em; /* Adjust font size for mobile */
         padding: 8px; /* Less padding on mobile */
         background-color: rgba(0, 0, 0, 0.7); /* Slightly more opaque background */
@@ -450,7 +458,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     width: 55%;  /* Take up 55% of the width */
-    overflow: hidden;
+    overflow: visible;
     height: 700px;
     gap: 20px;
     padding: 20px;
@@ -488,19 +496,29 @@ h1 {
 
 /* Mobile Styling */
 @media (max-width: 768px) {
+    .content-wrapper {
+        display: flex;
+        padding: 20px;
+        flex-wrap: wrap;
+    }
+    
+    .text-section {
+        width: 100%;
+    }
+    
     /* Merge galleries into one horizontal scrolling album */
     .gallery-container {
         flex-direction: row;
-        width: 300px;
+        width: 80vw;
         height:auto;
-        overflow-x: auto;
+        overflow-x: hidden;
         scroll-behavior: smooth;
     }
 
     .gallery-column {
         flex-direction: row; 
         gap: 10px;
-        overflow-x: auto;
+        overflow-x: hidden;
         animation: scrollRight 60s linear infinite; 
     }
 
