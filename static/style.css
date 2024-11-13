@@ -42,6 +42,91 @@ body {
 .navbar-toggle {
     display: none;
 }
+<<<<<<< HEAD
+=======
+
+@media (max-width: 768px) {
+    /* Hide navbar links by default on mobile */
+    .navbar {
+        display: flex;
+        align-items: right;
+        justify-content: space-between;
+        background-color: #d1b68d;
+        padding: 0.5rem 3rem;
+        font-family: 'Great Vibes', cursive;
+        font-size: .5rem;
+    }
+    .navbar ul {
+        display: none;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .navbar-toggle {
+        display: block; /* Show the toggle button */
+        background-color: #333;
+        color: white;
+        border: none;
+        padding: 10px;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .navbar ul {
+        display: block;
+    }
+    .album-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+        max-width: 80vw;
+        margin: auto;
+        margin-top: 5px;
+    }
+    .scrollable-album {
+        display: flex;
+        overflow-x: auto;
+        gap: 10px;
+        padding: 0px;
+        width: 80vw;
+        scroll-behavior: smooth;
+        white-space: nowrap;
+    }
+    .scrollable-album img {
+        min-width: 80vw;
+        height: auto;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+    .scroll {
+        display: flex;
+        flex-direction: column;
+        animation: scrollUp 300s linear infinite;
+    }
+    .about-description {
+        max-width: 100%; /* Allow text to take up more space */
+        font-size: 1rem;  /* Adjust font size for readability */
+    }
+
+    .content-wrapper {
+        flex-direction: column; /* Stack text and gallery vertically */
+    }
+
+    .gallery-container {
+        flex-direction: row; 
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .gallery-column {
+        width: auto;
+        margin-bottom: 20px;
+    }
+}
+
+
+>>>>>>> c1426b6e6a2804194be9e0d40d6676bbf8eb2aec
 .navbar li {
     margin: 0 1.5rem;
 }
@@ -363,6 +448,7 @@ h1 {
     0% { transform: translateX(0); }
     100% { transform: translateX(-100%); }
 }
+<<<<<<< HEAD
 /* Responsive Styling */
 @media (max-width: 768px) {
     /* Adjust scrollable album images to fit mobile width */
@@ -404,3 +490,6 @@ h1 {
         display: flex; /* Show when toggled */
     }
 }
+=======
+
+>>>>>>> c1426b6e6a2804194be9e0d40d6676bbf8eb2aec
