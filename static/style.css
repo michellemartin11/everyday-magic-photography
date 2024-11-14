@@ -152,7 +152,6 @@ h1 {
 .section {
     background-color: #f9f7f7;
     padding: 2rem;
-    margin-bottom: 1rem;
     border-radius: 8px;
 }
 
@@ -180,7 +179,7 @@ h1 {
     font-size: 1.2rem;
     color: #555;
     max-width: 50%;
-    margin: 0 auto;
+    margin: 3px auto;
     line-height: 1.5;
 }
 @media (max-width: 768px) {
@@ -225,16 +224,16 @@ h1 {
     font-size: 5rem;
     font-family: 'Dancing Script', cursive;
     color: #5a4b41;
-    margin: 10px auto;
+    margin: 10px;
 }
 
 .about-description {
     text-align: left;
     font-size: 1.1em;
     max-width: 60%;
-    margin: 20px auto;
+    margin: 10px auto;
     color: #5a4b41;
-    padding: 20px;
+    padding: 10px;
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -281,7 +280,7 @@ h1 {
     position: relative;
     width: 50vw;
     max-width: 100%;
-    margin: 50px auto;
+    margin: 10px auto;
     text-align: center;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
