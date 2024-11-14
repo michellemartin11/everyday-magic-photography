@@ -391,7 +391,7 @@ h1 {
 
 .session-header {
     text-align: center;
-    max-width: 50%;
+    max-width: 80%;
     margin: 30px auto;
     color: #555;
     font-size: 3rem;
@@ -543,14 +543,14 @@ h1 {
 
     .gallery-column1 .gallery-column2 {
         flex: 1;
-        flex-direction: row; 
+        flex-direction: column; 
         gap: 10px;
         overflow: hidden;
     }
 
     .scroll {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         animation: scrollRight 80s linear infinite;
     }
 
