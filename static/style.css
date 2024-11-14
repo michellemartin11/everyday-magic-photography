@@ -271,7 +271,7 @@ h1 {
 
 /* Image styling */
 .image-container img {
-    width: fit-content;
+    width: 80vw;
     height: auto;
     display: block; 
     border-radius: 10px;
