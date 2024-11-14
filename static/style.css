@@ -148,6 +148,17 @@ h1 {
     font-weight: 400;
 }
 
+/* Section Background Styling */
+.section {
+    background-color: #f9f7f7;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.section:nth-child(even) {
+    background-color: #e9e4e4;
+}
+
 /* Welcome Section */
 .welcome-section {
     text-align: center;
@@ -220,9 +231,9 @@ h1 {
     text-align: left;
     font-size: 1.1em;
     max-width: 60%;
-    margin: 10px;
+    margin: 10px auto;
     color: #5a4b41;
-    padding: 0px;
+    padding: 10px;
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -408,7 +419,7 @@ h1 {
 
 /* Individual image styling */
 .scrollable-album img {
-    width: 600px;
+    width: 550px;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -533,12 +544,13 @@ h1 {
         flex: 1;
         flex-direction: row; 
         gap: 10px;
-        overflow-y: visible;
-        animation: scrollRight 80s linear infinite; 
+        overflow-x: visible;
     }
 
     .scroll {
+        display: flex;
         flex-direction: row;
+        animation: scrollRight 80s linear infinite;
     }
 
     .scroll img {
