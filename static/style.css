@@ -38,7 +38,7 @@ body {
 /* Navbar Logo */
 .navbar_logo {
     width: auto;
-    height: 200px;
+    height: 160px;
     margin: 0 auto 0 0;
     padding: 0;
     display: flex;
@@ -65,7 +65,7 @@ body {
     list-style-type: none;
     padding: 0;
     display: flex;
-    justify-content: flex-start;
+    justify-content: right;
     align-items: center;
     gap: clamp(1.25rem, 2.6vw, 2.25rem);
 }
@@ -120,6 +120,16 @@ body {
         font-family: 'Verdana', sans-serif;
         font-size: 1.2rem;
     }
+    .navbar_logo {
+        width: auto;
+        height: 30px;
+        margin: 0 auto 0 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+    } 
 }
 
 /* Desktop Navbar */
@@ -493,7 +503,7 @@ h1 {
     flex-wrap: wrap; 
 }
 
-.gallery-column1, .gallery-column2 {
+.gallery-column1 .gallery-column2 {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -537,8 +547,8 @@ h1 {
     /* Merge galleries into one horizontal scrolling album */
     .gallery-container {
         flex-direction: row;
-        width: 80vw;
-        height:auto;
+        height: 35vw;
+        width:auto;
         overflow-x: hidden;
         scroll-behavior: smooth;
     }
