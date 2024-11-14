@@ -23,22 +23,20 @@ body {
     z-index: 10000;
 }
 .navbar {
-    width: 100%;
-    max-width: 100rem;
-    margin: auto;
-    list-style-type: none;
     display: flex;
-    justify-content: flex-end;
     align-items: center;
-    gap: 2rem;
+    justify-content: space-between;
     background-color: #d1b68d;
+    padding: 0.5rem 5rem;
+    font-size: 3rem;
+    font-weight: bold;
     
 }
 
 /* Navbar Logo */
 .navbar_logo {
     width: auto;
-    height: 160px;
+    height: 125px;
     margin: 0 auto 0 0;
     padding: 0;
     display: flex;
@@ -63,7 +61,7 @@ body {
     width: 100%;
     margin: 0;
     list-style-type: none;
-    padding: 0;
+    padding-right: 20;
     display: flex;
     justify-content: right;
     align-items: center;
@@ -290,7 +288,7 @@ h1 {
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 80vw;
+    width: 50vw;
     max-width: 100%;
     margin: 50px auto;
     text-align: center;
@@ -495,16 +493,15 @@ h1 {
 .gallery-container {
     display: flex;
     justify-content: space-between;
-    width: 55%;  /* Take up 55% of the width */
-    overflow: visible;
+    width: 55%;
+    overflow: hidden;
     height: 700px;
     gap: 20px;
     padding: 20px;
-    flex-wrap: wrap; 
 }
 
-.gallery-column1 .gallery-column2 {
-    flex: 1;
+.gallery-column1, .gallery-column2 {
+    width: 45%; /* Set a defined width to keep both columns visible */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -515,7 +512,7 @@ h1 {
 .scroll {
     display: flex;
     flex-direction: column;
-    animation: scrollUp 100s linear infinite; /* Upward scroll for desktop */
+    animation: scrollUp 100s linear infinite;
 }
 
 .scroll img {
@@ -547,8 +544,8 @@ h1 {
     /* Merge galleries into one horizontal scrolling album */
     .gallery-container {
         flex-direction: row;
-        height: 35vw;
-        width:auto;
+        height: auti;
+        width: 80vw;
         overflow-x: hidden;
         scroll-behavior: smooth;
     }
@@ -556,8 +553,8 @@ h1 {
     .gallery-column1, .gallery-column2 {
         flex-direction: row; 
         gap: 10px;
-        overflow-x: hidden;
-        animation: scrollRight 60s linear infinite; 
+        overflow-x: visible;
+        animation: scrollRight 80s linear infinite; 
     }
 
     .scroll {
