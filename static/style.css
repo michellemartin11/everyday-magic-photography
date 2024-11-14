@@ -334,11 +334,11 @@ h1 {
     }
 
     .overlay-text .title {
-        font-size: 1.2em; /* Smaller title font on mobile */
+        font-size: 0.8em; /* Smaller title font on mobile */
     }
 
     .overlay-text .credit {
-        font-size: 0.9em; /* Smaller credit font on mobile */
+        font-size: 0.25em; /* Smaller credit font on mobile */
     }
 }
 /* Modal Styles */
@@ -487,7 +487,7 @@ h1 {
     flex-wrap: wrap; 
 }
 
-.gallery-column {
+.gallery-column1, .gallery-column2 {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -537,7 +537,7 @@ h1 {
         scroll-behavior: smooth;
     }
 
-    .gallery-column {
+    .gallery-column1, .gallery-column2 {
         flex-direction: row; 
         gap: 10px;
         overflow-x: hidden;
