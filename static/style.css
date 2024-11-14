@@ -13,15 +13,6 @@ body {
 }
 
 /* General Navbar Styles */
-.navigation {
-    width: 100%;
-    padding: 0 1rem;
-    box-sizing: border-box;
-    background-color: #fff;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    position: fixed;
-    z-index: 10000;
-}
 .navbar {
     display: flex;
     align-items: center;
