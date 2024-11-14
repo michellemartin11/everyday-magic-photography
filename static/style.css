@@ -67,7 +67,7 @@ body {
 .navbar-links a {
     text-decoration: none;
     color: #333;
-    font-size: 1.1rem;
+    font-size: 2rem;
     padding: 5px;
 }
 
@@ -82,6 +82,7 @@ body {
     .navbar-links {
         display: none;
         position: absolute;
+        justify-content: right;
         top: 60px;
         right: 10px;
         background-color: #fff;
@@ -224,7 +225,6 @@ h1 {
     font-size: 5rem;
     font-family: 'Dancing Script', cursive;
     color: #5a4b41;
-    margin: 10px;
 }
 
 .about-description {
@@ -490,8 +490,8 @@ h1 {
     padding: 20px;
 }
 
-.gallery-column1, .gallery-column2 {
-    width: 45%; /* Set a defined width to keep both columns visible */
+.gallery-column1 .gallery-column2 {
+    width: 45%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -534,13 +534,13 @@ h1 {
     /* Merge galleries into one horizontal scrolling album */
     .gallery-container {
         flex-direction: row;
-        height: auti;
+        height: auto;
         width: 80vw;
         overflow-x: hidden;
         scroll-behavior: smooth;
     }
 
-    .gallery-column1, .gallery-column2 {
+    .gallery-column1 .gallery-column2 {
         flex-direction: row; 
         gap: 10px;
         overflow-x: visible;
@@ -552,7 +552,6 @@ h1 {
     }
 
     .scroll img {
-        width: auto;
         min-width: 80vw; /* Adjust width for mobile */
         height: auto;
     }
