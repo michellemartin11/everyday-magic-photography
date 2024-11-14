@@ -24,8 +24,9 @@ body {
 }
 .navbar {
     width: 100%;
-    max-width: 90rem;
+    max-width: 100rem;
     margin: auto;
+    list-style-type: none;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -36,9 +37,9 @@ body {
 
 /* Navbar Logo */
 .navbar_logo {
-    width: 12.4%;
+    width: auto;
     max-width: 21.875rem;
-    height: 4.375rem;
+    height: 100%;
     margin: 0 auto 0 0;
     padding: 0;
     display: flex;
