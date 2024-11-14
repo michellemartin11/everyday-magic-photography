@@ -525,6 +525,7 @@ h1 {
         display: flex;
         padding: 20px;
         flex-wrap: wrap;
+        text-align: center;
     }
     
     .text-section {
@@ -533,10 +534,10 @@ h1 {
     
     /* Merge galleries into one horizontal scrolling album */
     .gallery-container {
-        flex-direction: row;
+        flex-direction: column;
         height: auto;
-        width: 80vw;
-        overflow-x: hidden;
+        width: 100vw;
+        overflow: hidden;
         scroll-behavior: smooth;
     }
 
@@ -544,7 +545,7 @@ h1 {
         flex: 1;
         flex-direction: row; 
         gap: 10px;
-        overflow-x: visible;
+        overflow: hidden;
     }
 
     .scroll {
@@ -558,10 +559,5 @@ h1 {
         height: auto;
     }
 
-    /* Animation for mobile (scrolling right-to-left) */
-    @keyframes scrollRight {
-        0% { transform: translateX(100%); }
-        100% { transform: translateX(-100%); }
-    }
 }
 
