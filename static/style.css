@@ -73,15 +73,8 @@ body {
 
 /* Mobile Dropdown Menu */
 @media (max-width: 768px) {
-    .navbar {
-        display: flex;
-        align-items: right;
-        justify-content: space-between;
-        background-color: #d1b68d;
-        padding: 0.5rem 0.5rem;
-        font-size: 3rem;
     /* Show toggle button on mobile */     
-    }#navbar-toggle {
+    #navbar-toggle {
         display: block;
     }
     /* Hide navbar links by default on mobile */
@@ -93,9 +86,9 @@ body {
         background-color: #fff;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         flex-direction: column;
-        width: 200px;
+        width: 190px;
         border-radius: 5px;
-        padding: 5px;
+        padding: 2px;
         z-index: 1000;
     }
 
@@ -106,12 +99,10 @@ body {
 
     /* Add space between the links in the dropdown */
     .navbar-links li {
-        margin-bottom: 5px;
+        margin: 0px 0px 2px 0px;
     }
-
     /* Styling for the dropdown links */
     .navbar-links a {
-        padding: 2px;
         font-family: 'Verdana', sans-serif;
         font-size: 1rem;
     }
@@ -207,7 +198,10 @@ h1 {
     max-width: 50%;
     margin: 3px auto;
     padding-bottom: 5px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     line-height: 1.5;
 }
 @media (max-width: 768px) {
@@ -427,6 +421,9 @@ h1 {
 .session-description {
     text-align: center;
     font-size: 1.2rem;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     background-color: #fdf6d6;
     max-width: 80%;
