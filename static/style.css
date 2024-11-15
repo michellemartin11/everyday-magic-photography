@@ -168,7 +168,7 @@ h1 {
     margin-top: 10px;
     font-size: 2rem;
     color: var(--chocolate);
-    padding: 1.5rem 1rem 1.5rem 0.25rem;
+    padding: 0.5rem 1rem 0.5rem 0.25rem;
     font-family: 'ivyora-display', sans-serif;
     font-weight: 400;
 }
@@ -203,8 +203,11 @@ h1 {
     font-family: 'Arial', sans-serif;
     font-size: 1.2rem;
     color: #555;
+    background-color: #d3d0c8;
     max-width: 50%;
     margin: 3px auto;
+    padding-bottom: 5px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     line-height: 1.5;
 }
 @media (max-width: 768px) {
@@ -226,9 +229,12 @@ h1 {
     .welcome-section p {
         font-family: 'Arial', sans-serif;
         font-size: 1.2rem;
+        background-color: #d3d0c8;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         color: #555;
         max-width: 80%;
-        margin: 0 auto;
+        padding-bottom: 5px;
+        margin: 0px auto;
         line-height: 1.5;
     }
 }
@@ -262,7 +268,7 @@ h1 {
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff;
+    background-color: #ece9dd;
     line-height: 1.6;
 }
 
@@ -421,6 +427,8 @@ h1 {
 .session-description {
     text-align: center;
     font-size: 1.2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fdf6d6;
     max-width: 80%;
     margin: 10px auto;
     color: #555;
@@ -585,20 +593,20 @@ h1 {
     }
 
     .gallery-column1 .gallery-column2 {
-        flex: 1;
-        flex-direction: row; 
+        width: 45%;
+        flex-direction: column; 
         gap: 10px;
         overflow: hidden;
     }
 
     .scroll {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         animation: scrollRight 80s linear infinite;
     }
 
     .scroll img {
-        max-width: 80vw; /* Adjust width for mobile */
+        width: 100%; /* Adjust width for mobile */
         height: auto;
     }
 
