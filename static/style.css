@@ -189,7 +189,7 @@ h1 {
     text-align: center;
     background-color: #b1aea7;
     padding: 0;
-    margin: 10px 0;
+    margin: 10px 10px;
 }
 
 .welcome-section h1 {
@@ -611,7 +611,7 @@ h1 {
     .scroll {
         display: flex;
         flex-direction: column;
-        animation: scrollUp 200s linear infinite;
+        animation: none;
     }
 
     .scroll img {
