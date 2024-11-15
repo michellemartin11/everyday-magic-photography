@@ -471,6 +471,13 @@ h1 {
     .album-container {
         justify-content: center;
     }
+    .scroll-btn.left {
+    display: none;
+}
+
+.scroll-btn.right {
+    display: none;
+}
 }
 /* Wrapper for Text and Gallery */
 .content-wrapper {
