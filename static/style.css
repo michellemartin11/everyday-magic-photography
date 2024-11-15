@@ -469,15 +469,14 @@ h1 {
 
     /* Center the album container on mobile */
     .album-container {
-        justify-content: center;
+        justify-content: right;
     }
     .scroll-btn.left {
     display: none;
-}
-
-.scroll-btn.right {
-    display: none;
-}
+    }
+    .scroll-btn.right {
+        display: none;
+    }
 }
 /* Wrapper for Text and Gallery */
 .content-wrapper {
