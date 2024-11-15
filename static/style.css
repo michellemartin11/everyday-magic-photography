@@ -192,10 +192,10 @@ h1 {
 
 .welcome-section p {
     font-family: 'Arial', sans-serif;
-    font-size: 1.2rem;
+    font-size: 2rem;
     color: #555;
     background-color: #d3d0c8;
-    max-width: 50%;
+    max-width: 80%;
     margin: 3px auto;
     padding-bottom: 5px;
     padding: 20px;
@@ -303,7 +303,7 @@ h1 {
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 50vw;
+    width: 40vw;
     max-width: 100%;
     margin: 10px auto;
     text-align: center;
@@ -313,7 +313,7 @@ h1 {
 
 /* Image styling */
 .image-container img {
-    width: 50vw;
+    width: 40vw;
     height: auto;
     display: block; 
     border-radius: 10px;
@@ -425,7 +425,7 @@ h1 {
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    background-color: #ecebe4;
+    background-color: #eee9e1;
     max-width: 80%;
     margin: 10px auto;
     color: #555;
