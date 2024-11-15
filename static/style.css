@@ -185,17 +185,17 @@ h1 {
 
 .welcome-section h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 2rem;
+    font-size: 4rem;
     color: #1f1a16;
     margin-bottom: 1px;
 }
 
 .welcome-section p {
     font-family: 'Arial', sans-serif;
-    font-size: 2rem;
+    font-size: 1.2rem;
     color: #555;
     background-color: #d3d0c8;
-    max-width: 80%;
+    max-width: 50%;
     margin: 3px auto;
     padding-bottom: 5px;
     padding: 20px;
@@ -433,6 +433,7 @@ h1 {
 
 .session-header {
     text-align: center;
+    text-decoration: underline;
     max-width: 80%;
     margin: 30px auto;
     color: #555;
