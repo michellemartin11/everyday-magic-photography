@@ -620,8 +620,8 @@ h1 {
 
     /* Style for individual images in mobile gallery */
     .mobile-gallery .gallery-images img {
-        width: auto; /* Full viewport width */
-        height: 250px; /* Set height to maintain consistency */
+        width: 90vw; /* Full viewport width */
+        height: auto; /* Set height to maintain consistency */
         object-fit: cover; /* Maintain aspect ratio and crop if necessary */
         flex-shrink: 0;
         scroll-snap-align: start;
