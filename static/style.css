@@ -561,22 +561,111 @@ h1 {
     position: relative;
 }
 
-/* Mobile gallery (hidden by default) */
-.mobile-gallery {
-    display: none; 
+/* General styling for the gallery (Desktop) */
+.gallery-container {
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
     overflow: hidden;
-    width: 100%;
-    height: auto;
+    height: 700px;
+    gap: 20px;
+    padding: 20px;
 }
 
-/* Make images display in a row for mobile gallery */
-.mobile-gallery .gallery-images {
+.gallery-column1, .gallery-column2 {
+    width: 45%;
     display: flex;
-    gap: 10px; 
-    overflow-x: auto; 
-    scroll-snap-type: x mandatory; 
-    -webkit-overflow-scrolling: touch; 
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
 }
+
+/* Scrollable gallery styles for desktop */
+.scroll {
+    display: flex;
+    flex-direction: column;
+    animation: scrollUp 100s linear infinite;
+}
+
+.scroll img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation for vertical scroll (desktop) */
+@keyframes scrollUp {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-100%); }
+}
+
+/* Desktop-specific styles */
+@media (min-width: 768px) {
+    .gallery-column1,
+    .gallery-column2 {
+        display: block; /* Show columns on desktop */
+    }
+
+    .gallery-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    /* Hide mobile gallery on desktop */
+    .mobile-gallery {
+        display: none;
+    }
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    /* Hide columns on mobile */
+    .gallery-column1,
+    .gallery-column2 {
+        display: none;
+    }
+
+    /* Mobile gallery styling */
+    .mobile-gallery {
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+    }
+
+    .mobile-gallery .gallery-images {
+        display: flex;
+        gap: 10px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* Style for individual images in mobile gallery */
+    .mobile-gallery .gallery-images img {
+        width: 100vw; /* Full viewport width */
+        height: 200px; /* Fixed height to maintain consistency */
+        object-fit: cover; /* Maintain aspect ratio and crop if necessary */
+        flex-shrink: 0;
+        scroll-snap-align: start;
+        border-radius: 15px; /* Rounded corners */
+    }
+
+    .gallery-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+    }
+}
+
 
 /* Style for individual images in mobile gallery */
 .mobile-gallery .gallery-images img {
