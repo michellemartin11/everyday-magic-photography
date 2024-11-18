@@ -623,7 +623,7 @@ h1 {
 
     /* Style for individual images in mobile gallery */
     .mobile-gallery img {
-        width: 80vw; 
+        width: 100vw; 
         height: auto;
     }
 
