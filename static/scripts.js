@@ -22,7 +22,13 @@ function scrollAlbum(direction) {
     } else if (direction === 'right') {
         scrollableAlbum.scrollLeft += scrollDistance;
     }
+
+    // Manual smooth scrolling fallback
+    if (!('scrollBehavior' in document.documentElement.style)) {
+        scrollableAlbum.style.scrollBehavior = 'smooth';
+    }
 }
+
 
 
 // Event listeners for buttons
