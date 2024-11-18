@@ -610,6 +610,10 @@ h1 {
     .gallery-column2 {
         display: none;
     }
+    .gallery-container {
+        width: 100vw;
+        height: auto
+    }
     .mobile-gallery {
         display: flex;
         flex-direction: row; 
