@@ -561,6 +561,23 @@ h1 {
     position: relative;
 }
 
+.mobile-gallery {
+    display: none; 
+    overflow: hidden; 
+    width: 100%; 
+}
+
+/* Make images display in a row */
+.mobile-gallery .gallery-images {
+    display: flex;
+}
+
+/* Style for individual images */
+.mobile-gallery .gallery-images img {
+    width: 100vw; 
+    object-fit: cover; 
+    flex-shrink: 0;
+}
 .scroll {
     display: flex;
     flex-direction: column;
@@ -580,8 +597,19 @@ h1 {
     0% { transform: translateY(0); }
     100% { transform: translateY(-100%); }
 }
-
+@media (min-width: 768px) {
+    .mobile-gallery {
+        display: none;
+    }
+}
 @media (max-width: 768px) {
+    .gallery-column1,
+    .gallery-column2 {
+        display: none;
+    }
+    .mobile-gallery {
+        display: block; 
+    }
     .content-wrapper {
         display: flex;
         flex-direction: column;
@@ -595,6 +623,7 @@ h1 {
         margin-bottom: 20px;
     }
 
+    /* Merged and horizontal scrollable gallery for mobile */
     .gallery-container {
         display: flex;
         flex-direction: row; /* Combine both columns horizontally */
@@ -603,7 +632,7 @@ h1 {
         height: auto;
         width: 100%;
         gap: 10px;
-        overflow-x: scroll;
+        overflow-x: auto; /* Allow horizontal scrolling */
         overflow-y: hidden;
         scroll-behavior: smooth; /* For smooth scrolling effect */
     }
@@ -616,7 +645,7 @@ h1 {
     .gallery-column2 {
         width: auto; /* Adjust to content width */
         display: flex;
-        flex-direction: row;
+        flex-direction: row; /* Ensure the images align horizontally */
         align-items: center;
         gap: 10px;
         overflow: hidden;
@@ -624,13 +653,13 @@ h1 {
 
     .scroll {
         display: flex;
-        flex-direction: row;
+        flex-direction: row; /* Make sure images are in a row */
     }
 
     .scroll img {
         width: 80vw; /* Adjust image width for mobile */
         height: auto;
-        margin-right: 10px;
+        margin-right: 10px; /* Space between images */
         margin-bottom: 0; /* Remove bottom margin for horizontal layout */
     }
 }
