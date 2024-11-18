@@ -463,10 +463,11 @@ h1 {
     display: flex;
     gap: 10px;
     align-items: center;
-    justify-content: center; /* Ensure images are centered in their container */
-    overflow-x: auto; /* Allow horizontal scrolling */
+    justify-content: flex-start; 
+    overflow-x: auto;
     scroll-behavior: smooth;
     padding: 20px;
+    width: max-content;
 }
 
 /* Individual image styling */
