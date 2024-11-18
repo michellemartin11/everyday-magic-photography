@@ -561,31 +561,29 @@ h1 {
     position: relative;
 }
 
-/* Mobile gallery */
+/* Mobile gallery (hidden by default) */
 .mobile-gallery {
-    display: none;
+    display: none; /* Hide the mobile gallery by default (on desktop) */
     overflow: hidden;
-    width: 100vw;
+    width: 100%;
     height: auto;
 }
 
-/* Make images display in a row */
+/* Make images display in a row for mobile gallery */
 .mobile-gallery .gallery-images {
     display: flex;
-    animation: scroll-left 20s linear infinite; /* Horizontal scrolling */
+    gap: 10px; /* Add space between images */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Enable snap scrolling */
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
 }
 
-/* Style for individual images */
+/* Style for individual images in mobile gallery */
 .mobile-gallery .gallery-images img {
-    width: 100vw; /* Each image takes the full viewport width */
+    width: 100vw; /* Each image takes full viewport width */
     object-fit: cover;
-    flex-shrink: 0;
-}
-
-/* Animation for horizontal scrolling */
-@keyframes scroll-left {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
+    flex-shrink: 0; /* Prevent images from shrinking */
+    scroll-snap-align: start; /* Align images to the left edge */
 }
 
 /* Scrollable gallery styles for desktop */
@@ -612,7 +610,17 @@ h1 {
 /* Hide mobile gallery on desktop */
 @media (min-width: 768px) {
     .mobile-gallery {
-        display: none;
+        display: none; /* Hide mobile gallery on desktop */
+    }
+
+    .gallery-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .gallery-column1, .gallery-column2 {
+        display: flex;
     }
 }
 
@@ -624,7 +632,7 @@ h1 {
     }
 
     .mobile-gallery {
-        display: block;
+        display: block; /* Show mobile gallery on mobile */
     }
 
     .content-wrapper {
@@ -637,20 +645,25 @@ h1 {
 
     .text-section {
         width: 100%;
-        margin-bottom: 20px;
     }
 
-    /* Merged and horizontal scrollable gallery for mobile */
+    /* Merged and horizontally scrollable gallery for mobile */
     .gallery-container {
         display: flex;
         flex-direction: row; /* Align items horizontally */
         justify-content: flex-start;
         align-items: center;
         height: auto;
-        width: 100vw;
+        width: 100%;
         gap: 10px;
         overflow-x: auto; /* Allow horizontal scrolling */
         overflow-y: hidden;
         scroll-behavior: smooth; /* Smooth scrolling */
+    }
+
+    /* Adjust mobile gallery images to fit the width of the screen */
+    .mobile-gallery img {
+        width: 100vw; /* Ensure each image takes full width of the viewport */
+        height: auto;
     }
 }
