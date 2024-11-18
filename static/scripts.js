@@ -18,11 +18,12 @@ function getScrollDistance() {
 function scrollAlbum(direction) {
     const scrollDistance = getScrollDistance();
     if (direction === 'left') {
-        scrollableAlbum.scrollBy({ left: -scrollDistance, behavior: 'smooth' });
+        scrollableAlbum.scrollLeft -= scrollDistance;
     } else if (direction === 'right') {
-        scrollableAlbum.scrollBy({ left: scrollDistance, behavior: 'smooth' });
+        scrollableAlbum.scrollLeft += scrollDistance;
     }
 }
+
 
 // Event listeners for buttons
 leftButton.addEventListener('click', () => scrollAlbum('left'));
