@@ -610,21 +610,17 @@ h1 {
     .gallery-column2 {
         display: none;
     }
-    .mobile-gallery .gallery-images {
+    .mobile-gallery {
         display: flex;
-        gap: 10px;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
+        flex-direction: row; 
+        gap: 0; 
+        justify-content: flex-start; 
     }
 
     /* Style for individual images in mobile gallery */
-    .mobile-gallery .gallery-images img {
-        width: 90vw; 
-        height: auto; 
-        flex-shrink: 0;
-        scroll-snap-align: start;
-        border-radius: 15px; /
+    .mobile-gallery img {
+        width: 80vw; 
+        height: auto;
     }
 
     .gallery-container {
