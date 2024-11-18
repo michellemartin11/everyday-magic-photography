@@ -565,7 +565,7 @@ h1 {
 .mobile-gallery {
     display: none;
     overflow: hidden;
-    width: 90vw;
+    width: 100vw;
     height: auto;
 }
 
@@ -647,7 +647,7 @@ h1 {
         justify-content: flex-start;
         align-items: center;
         height: auto;
-        width: 100%;
+        width: 100vw;
         gap: 10px;
         overflow-x: auto; /* Allow horizontal scrolling */
         overflow-y: hidden;
