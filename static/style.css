@@ -581,6 +581,7 @@ h1 {
 /* Style for individual images in mobile gallery */
 .mobile-gallery .gallery-images img {
     width: 100vw; /* Each image takes full viewport width */
+    height: auto;
     object-fit: cover;
     flex-shrink: 0; /* Prevent images from shrinking */
     scroll-snap-align: start; /* Align images to the left edge */
@@ -616,7 +617,7 @@ h1 {
     /* Show desktop galleries */
     .gallery-column1,
     .gallery-column2 {
-        display: block; /* Show the columns on desktop */
+        display: block; /* Ensure only two galleries are shown */
     }
 
     .gallery-container {
