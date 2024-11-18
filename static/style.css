@@ -615,8 +615,6 @@ h1 {
     .mobile-gallery {
         display: block;
         overflow: hidden;
-        width: 100%;
-        height: auto;
     }
 
     .mobile-gallery .gallery-images {
@@ -629,7 +627,7 @@ h1 {
 
     /* Style for individual images in mobile gallery */
     .mobile-gallery .gallery-images img {
-        width: 100vw; /* Full viewport width */
+        width: auto; /* Full viewport width */
         height: 250px; /* Set height to maintain consistency */
         object-fit: cover; /* Maintain aspect ratio and crop if necessary */
         flex-shrink: 0;
