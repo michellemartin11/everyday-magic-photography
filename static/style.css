@@ -541,26 +541,6 @@ h1 {
     padding-right: 10px;
 }
 
-/* General styling for the gallery */
-.gallery-container {
-    display: flex;
-    justify-content: space-between;
-    width: 55%;
-    overflow: hidden;
-    height: 700px;
-    gap: 20px;
-    padding: 20px;
-}
-
-.gallery-column1, .gallery-column2 {
-    width: 45%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-    position: relative;
-}
-
 /* General styling for the gallery (Desktop) */
 .gallery-container {
     display: flex;
@@ -663,99 +643,5 @@ h1 {
         gap: 10px;
         overflow-x: auto;
         scroll-behavior: smooth;
-    }
-}
-
-
-/* Style for individual images in mobile gallery */
-.mobile-gallery .gallery-images img {
-    width: 100vw; 
-    object-fit: cover;
-    flex-shrink: 0; 
-    scroll-snap-align: start; 
-}
-
-/* Scrollable gallery styles for desktop */
-.scroll {
-    display: flex;
-    flex-direction: column;
-    animation: scrollUp 100s linear infinite;
-}
-
-.scroll img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 15px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Animation for vertical scroll (desktop) */
-@keyframes scrollUp {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-100%); }
-}
-
-/* Hide mobile gallery on desktop and show columns */
-@media (min-width: 768px) {
-    /* Hide mobile gallery on desktop */
-    .mobile-gallery {
-        display: none; 
-    }
-    /* Show desktop galleries */
-    .gallery-column1,
-    .gallery-column2 {
-        display: flex; 
-    }
-
-    .gallery-container {
-        display: flex;
-        justify-content: space-between;
-        gap: 20px;
-    }
-}
-
-/* Mobile-specific styles */
-@media (max-width: 768px) {
-    .gallery-column1,
-    .gallery-column2 {
-        display: none; 
-    }
-
-    /* Show the mobile gallery on mobile */
-    .mobile-gallery {
-        display: block; 
-    }
-
-    .content-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-        text-align: center;
-    }
-
-    .text-section {
-        width: 100%;
-    }
-
-    /* Merged and horizontally scrollable gallery for mobile */
-    .gallery-container {
-        display: flex;
-        flex-direction: row; 
-        justify-content: flex-start;
-        align-items: center;
-        height: auto;
-        width: 100%;
-        gap: 10px;
-        overflow-x: auto; 
-        overflow-y: hidden;
-        scroll-behavior: smooth; 
-    }
-
-    /* Adjust mobile gallery images to fit the width of the screen */
-    .mobile-gallery img {
-        width: 100vw; 
-        height: auto;
     }
 }
