@@ -504,20 +504,20 @@ h1 {
 @media (max-width: 768px) {
     .scrollable-album {
         display: flex;
-        flex-direction: row; /* Ensure the gallery stays in a row */
-        gap: 0; /* Remove any gaps between images on mobile */
-        justify-content: flex-start; /* Align items to the left */
+        flex-direction: row; 
+        gap: 0; 
+        justify-content: flex-start; 
     }
 
     /* Adjust image size on mobile */
     .scrollable-album img {
-        width: 80vw; /* Adjust the width of the images for mobile */
+        width: 80vw; 
         height: auto;
     }
 
     /* Center the album container on mobile */
     .album-container {
-        justify-content: flex-start; /* Align container content to the left */
+        justify-content: flex-start; 
     }
 
     .scroll-btn.left {
@@ -563,7 +563,7 @@ h1 {
 
 /* Mobile gallery (hidden by default) */
 .mobile-gallery {
-    display: none; /* Hide the mobile gallery by default (on desktop) */
+    display: none; 
     overflow: hidden;
     width: 100%;
     height: auto;
@@ -572,19 +572,18 @@ h1 {
 /* Make images display in a row for mobile gallery */
 .mobile-gallery .gallery-images {
     display: flex;
-    gap: 10px; /* Add space between images */
-    overflow-x: auto; /* Enable horizontal scrolling */
-    scroll-snap-type: x mandatory; /* Enable snap scrolling */
-    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+    gap: 10px; 
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory; 
+    -webkit-overflow-scrolling: touch; 
 }
 
 /* Style for individual images in mobile gallery */
 .mobile-gallery .gallery-images img {
-    width: 100vw; /* Each image takes full viewport width */
-    height: auto;
+    width: 100vw; 
     object-fit: cover;
-    flex-shrink: 0; /* Prevent images from shrinking */
-    scroll-snap-align: start; /* Align images to the left edge */
+    flex-shrink: 0; 
+    scroll-snap-align: start; 
 }
 
 /* Scrollable gallery styles for desktop */
@@ -608,16 +607,16 @@ h1 {
     100% { transform: translateY(-100%); }
 }
 
-/* Hide mobile gallery on desktop */
+/* Hide mobile gallery on desktop and show columns */
 @media (min-width: 768px) {
+    /* Hide mobile gallery on desktop */
     .mobile-gallery {
-        display: none; /* Hide mobile gallery on desktop */
+        display: none; 
     }
-
     /* Show desktop galleries */
     .gallery-column1,
     .gallery-column2 {
-        display: block; /* Ensure only two galleries are shown */
+        display: flex; 
     }
 
     .gallery-container {
@@ -629,15 +628,14 @@ h1 {
 
 /* Mobile-specific styles */
 @media (max-width: 768px) {
-    /* Hide columns on mobile */
     .gallery-column1,
     .gallery-column2 {
-        display: none; /* Hide columns on mobile */
+        display: none; 
     }
 
     /* Show the mobile gallery on mobile */
     .mobile-gallery {
-        display: block; /* Show mobile gallery on mobile */
+        display: block; 
     }
 
     .content-wrapper {
@@ -655,20 +653,20 @@ h1 {
     /* Merged and horizontally scrollable gallery for mobile */
     .gallery-container {
         display: flex;
-        flex-direction: row; /* Align items horizontally */
+        flex-direction: row; 
         justify-content: flex-start;
         align-items: center;
         height: auto;
         width: 100%;
         gap: 10px;
-        overflow-x: auto; /* Allow horizontal scrolling */
+        overflow-x: auto; 
         overflow-y: hidden;
-        scroll-behavior: smooth; /* Smooth scrolling */
+        scroll-behavior: smooth; 
     }
 
     /* Adjust mobile gallery images to fit the width of the screen */
     .mobile-gallery img {
-        width: 100vw; /* Ensure each image takes full width of the viewport */
+        width: 100vw; 
         height: auto;
     }
 }
