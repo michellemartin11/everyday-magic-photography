@@ -610,13 +610,6 @@ h1 {
     .gallery-column2 {
         display: none;
     }
-
-    /* Mobile gallery styling */
-    .mobile-gallery {
-        display: block;
-        overflow: hidden;
-    }
-
     .mobile-gallery .gallery-images {
         display: flex;
         gap: 10px;
