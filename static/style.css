@@ -613,24 +613,28 @@ h1 {
         display: none; /* Hide mobile gallery on desktop */
     }
 
+    /* Show desktop galleries */
+    .gallery-column1,
+    .gallery-column2 {
+        display: block; /* Show the columns on desktop */
+    }
+
     .gallery-container {
         display: flex;
         justify-content: space-between;
         gap: 20px;
     }
-
-    .gallery-column1, .gallery-column2 {
-        display: flex;
-    }
 }
 
 /* Mobile-specific styles */
 @media (max-width: 768px) {
+    /* Hide columns on mobile */
     .gallery-column1,
     .gallery-column2 {
         display: none; /* Hide columns on mobile */
     }
 
+    /* Show the mobile gallery on mobile */
     .mobile-gallery {
         display: block; /* Show mobile gallery on mobile */
     }
