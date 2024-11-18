@@ -599,6 +599,20 @@ h1 {
     .mobile-gallery {
         display: none;
     }
+
+    /* Keep other sections (like the text section) as they are on desktop */
+    .text-section {
+        width: 100%;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .content-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
 }
 
 /* Mobile-specific styles */
@@ -628,7 +642,7 @@ h1 {
     /* Style for individual images in mobile gallery */
     .mobile-gallery .gallery-images img {
         width: 100vw; /* Full viewport width */
-        height: 200px; /* Fixed height to maintain consistency */
+        height: 250px; /* Set height to maintain consistency */
         object-fit: cover; /* Maintain aspect ratio and crop if necessary */
         flex-shrink: 0;
         scroll-snap-align: start;
@@ -643,5 +657,12 @@ h1 {
         gap: 10px;
         overflow-x: auto;
         scroll-behavior: smooth;
+    }
+
+    /* Ensure the text section is visible and centered in mobile */
+    .text-section {
+        width: 100%;
+        text-align: center;
+        margin: 20px 0;
     }
 }
