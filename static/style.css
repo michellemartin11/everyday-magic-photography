@@ -611,7 +611,7 @@ h1 {
         display: none;
     }
     .gallery-container {
-        width: 100vw;
+        width: 80vw;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
@@ -639,6 +639,6 @@ h1 {
     .text-section {
         width: 100%;
         text-align: center;
-        margin: 10px 0;
+        margin: 0;
     }
 }
