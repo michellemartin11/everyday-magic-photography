@@ -612,7 +612,6 @@ h1 {
     }
     .gallery-container {
         width: 100vw;
-        height: auto;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
