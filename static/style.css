@@ -612,7 +612,14 @@ h1 {
     }
     .gallery-container {
         width: 100vw;
-        height: auto
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        overflow-x: auto;
+        scroll-behavior: smooth;
     }
     .mobile-gallery {
         display: flex;
@@ -625,16 +632,8 @@ h1 {
     .mobile-gallery img {
         width: 100vw; 
         height: auto;
-    }
-
-    .gallery-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 10px;
-        overflow-x: auto;
-        scroll-behavior: smooth;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
 
     /* Ensure the text section is visible and centered in mobile */
