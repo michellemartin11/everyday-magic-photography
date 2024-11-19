@@ -611,7 +611,7 @@ h1 {
         display: none;
     }
     .gallery-container {
-        width: 100vw;
+        width: 90vw;
         height: auto;
         display: flex;
         flex-direction: row;
@@ -624,7 +624,7 @@ h1 {
     .mobile-gallery {
         display: flex;
         flex-direction: row; 
-        gap: 0; 
+        gap: 10px; 
         justify-content: flex-start; 
     }
 
@@ -640,6 +640,6 @@ h1 {
     .text-section {
         width: 100%;
         text-align: center;
-        margin: 20px 0;
+        margin: 10px 0;
     }
 }
