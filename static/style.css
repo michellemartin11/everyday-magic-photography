@@ -630,7 +630,8 @@ h1 {
 
     /* Style for individual images in mobile gallery */
     .mobile-gallery img {
-        width: 100%; 
+        max-width: 100%;
+        max-height: 200px; 
         height: auto;
         border-radius: 15px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
