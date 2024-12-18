@@ -566,7 +566,7 @@ h1 {
 .scroll {
     display: flex;
     flex-direction: column;
-    animation: scrollUp 80s linear infinite;
+    animation: scrollUp 100s linear infinite;
 }
 
 .scroll img {
