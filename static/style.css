@@ -5,7 +5,7 @@
 
 /* General Styles */
 body {
-    background-color: #ddd3c7;
+    background-color: #ece7df; /* gentle cream */
     font-family: 'Oswald', sans-serif;
     color: #333;
     margin: 0;
@@ -17,7 +17,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #d1b68d;
+    background-color: #c5aa7b; /* soft warm gold */
     padding: 0.5rem 5rem;
     font-size: 3rem;
     
@@ -169,7 +169,6 @@ h1 {
     font-size: 2rem;
     color: var(--chocolate);
     padding: 0.5rem 1rem 0.5rem 0.25rem;
-    font-family: 'ivyora-display', sans-serif;
     font-weight: 400;
 }
 
@@ -187,13 +186,12 @@ h1 {
 /* Welcome Section */
 .welcome-section {
     text-align: center;
-    background-color: #b1aea7;
+    background-color: #d8c6b1; /* warm taupe */
     padding-bottom: 10px;
     margin: 10px 10px;
 }
 
 .welcome-section h1 {
-    font-family: 'Playfair Display', serif;
     font-size: 4rem;
     color: #1f1a16;
     margin-bottom: 1px;
@@ -202,8 +200,8 @@ h1 {
 .welcome-section p {
     font-family: 'Arial', sans-serif;
     font-size: 1.2rem;
-    color: #555;
-    background-color: #d3d0c8;
+    background-color: #f1ede6;
+    color: #4a3b31;
     max-width: 50%;
     margin: 3px auto;
     padding-bottom: 5px;
@@ -643,4 +641,45 @@ h1 {
         text-align: center;
         margin: 0;
     }
+}
+/* --- Fancy Header Styling --- */
+
+.welcome-section h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 4rem;
+  color: #3a2b22;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.15);
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+h2, .session-header, .about-header {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  color: #4a3b31;
+  font-size: 3rem;
+  letter-spacing: 0.5px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.navbar-links a {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #2d2d2d;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #5a4b41;
+  transform: scale(1.05);
+}
+
+.overlay-text .title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2em;
+  color: #f8f5f0;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
 }
